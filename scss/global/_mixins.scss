@@ -1,0 +1,85 @@
+@mixin pg-64 {
+	padding: 32px 0;
+
+	@media (min-width:$pc) {
+		padding: 64px 0;
+	}
+}
+
+
+@mixin line {
+	width: fit-content;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		max-width: 120px;
+		height: 1px;
+		background: $brown;
+		transition: background 0.3s ease-in-out;
+		margin: 24px auto;
+	}
+
+	@media (min-width:$pc) {
+		&::after {
+			margin: 32px auto;
+		}
+	}
+}
+
+@mixin mb-20 {
+	&:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	@media (min-width:$pc) {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@mixin mb-32 {
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+
+	@media (min-width:$pc) {
+		&:not(:last-child) {
+			margin-bottom: 32px;
+		}
+	}
+}
+
+@mixin mb-64 {
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+
+	@media (min-width:$pc) {
+		&:not(:last-child) {
+			margin-bottom: 64px;
+		}
+	}
+}
+
+@mixin overlay-60 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+	z-index: 1;
+}
+
+@mixin overlay-20 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+	z-index: 1;
+}
