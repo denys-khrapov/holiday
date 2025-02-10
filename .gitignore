@@ -6,8 +6,6 @@ pnpm-debug.log
 
 # ⛔ Ігноруємо згенеровані CSS та JS файли (залишаємо лише вихідні SCSS та JS)
 css/*.css.map
-css/*.min.css
-js/*.min.js
 js/*.map
 
 # ⛔ Ігноруємо файли кешу та логів
